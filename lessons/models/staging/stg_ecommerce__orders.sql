@@ -8,12 +8,19 @@ SELECT
 	-- IDs
 	order_id,
 	user_id,
-	status,
-	gender,
+
+	-- Timestamps
 	created_at,
 	returned_at,
 	delivered_at,
 	shipped_at,
-	num_of_item
+
+	-- Other columns
+	status,
+	num_of_item AS num_items_ordered
+
+	{#- Unused columns:
+		- gender
+	#}
 
 FROM source
