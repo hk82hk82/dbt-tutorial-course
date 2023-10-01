@@ -28,6 +28,6 @@ SELECT
 	-- Calculated fields
 	order_items.item_sale_price - products.product_cost AS item_profit,
 	products.product_retail_price - order_items.item_sale_price AS item_discount
-
 FROM {{ ref('stg_ecommerce__order_items') }} AS order_items
 LEFT JOIN products ON order_items.product_id = products.product_id
+

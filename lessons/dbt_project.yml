@@ -40,8 +40,12 @@ models:
 
     +hours_to_expiration: 168
 
+
+
 tests:
   lessons:
-  +severity: warn
+    +severity: warn
+    marts:
+      +severity: error
 
 
